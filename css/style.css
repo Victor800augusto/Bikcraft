@@ -7,7 +7,7 @@
 body{
     font-family: Georgia, serif;
     color: #252525;
-    background: #e7e4d8;
+    background: #fff;
 }
 
 li {
@@ -21,4 +21,9 @@ img {
 
 a {
     text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
 }
