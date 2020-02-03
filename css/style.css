@@ -60,7 +60,8 @@ button {
 p {
     font-size: 0.875em;
     font-weight: 1.4em;
-    font-family: Georgia, 'Times New Roman', Times, serif;  
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    line-height: 1.4em; 
 }
 /************************************** PÁGINA INDEX **************************************/
 /* Header */
@@ -91,7 +92,7 @@ p {
     padding: 20px;
 }
 
-/* Intro */
+/* Página inicial intro */
 
 .inicial-intro {
     background: url(../fotos/mesa-trabalho.jpg) 0% 50%/cover no-repeat;
@@ -352,6 +353,11 @@ p {
     align-self: flex-start;
 }
 
+.footer-social a{
+    border: 3px solid #FEC63E;
+    padding: 5px;
+}
+
 .copyright {
     padding: 20px 10px;
     background: #FEC63E;
@@ -363,6 +369,7 @@ p {
 
 /***************************************** PÁGINA SOBRE **************************************/
 
+/* Página Sobre intro */
 .sobre-intro {
     background: url(../fotos/esporte-2.jpg) 0% 85%/cover no-repeat;
     padding: 40px 0;
@@ -379,20 +386,34 @@ p {
     margin: 9px auto 14px auto;
 }
 
+/* Página Sobre informações */
+
 .sobre-info {
-    padding: 60px 0;
+    padding: 60px 0 20px 0;
 }
 
 .sobre-info ul {
     align-content: center;
 }
 
-.sobre-info ul li{
-    flex: 1;
-    max-width: 520px;
-    margin: 20px;
+.sobre-info ul li h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 9px 0 14px 0;
 }
 
-.sobre-info img {
-    margin-top: 20px;
+.sobre-info ul li:first-child{
+    flex: 1;
+    max-width: 480px;
+    align-self: flex-start;
+    margin-right: 80px;
+}
+
+.sobre-imagem{
+    margin-top: 40px;
+    max-height: 320px;
+    overflow: hidden;
 }
