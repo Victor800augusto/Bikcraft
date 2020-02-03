@@ -39,10 +39,14 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2.25em;
 }
 
 h3 {
+    font-size: 1.5em;
+}
+
+h4 {
     font-size: 1.125em;
 }
 
@@ -58,7 +62,7 @@ p {
     font-weight: 1.4em;
     font-family: Georgia, 'Times New Roman', Times, serif;  
 }
-
+/************************************** PÁGINA INDEX **************************************/
 /* Header */
 
 .menu {
@@ -134,7 +138,7 @@ p {
 }
 
 /* Separador */
-.inicial-produtos h2::after {
+.inicial-produtos h3::after {
    content: '';
    display: block;
    width: 60px;
@@ -167,7 +171,7 @@ p {
 }
 
 /* Separador */
-.produtos-info h3::after{
+.produtos-info h4::after{
    content: '';
    display: block;
    width: 60px;
@@ -205,7 +209,7 @@ p {
 }
 
 /* Separador */
-.inicial-portifolio h2::after{
+.inicial-portifolio h3::after{
    content: '';
    display: block;
    width: 60px;
@@ -225,13 +229,13 @@ p {
 
 /* Qualidade */
 
-.inicial-qualidade {
+.qualidade {
    padding: 60px 0;
    text-align: center;
 }
 
 /* Separador */
-.inicial-qualidade h2::after{
+.qualidade h3::after{
     content: '';
     display: block;
     width: 60px;
@@ -240,17 +244,17 @@ p {
     margin: 10px auto 10px auto;
 }
 
-.qualidade-imagem img {
+.qualidade-logo img {
    margin: 30px auto;
 }
 
-.inicial-qualidade ul li {
+.qualidade ul li {
    flex: 1;
    max-width: 240px;
    margin: 20px auto;
 }
 
-.inicial-qualidade > p {
+.qualidade > p {
    margin-bottom: 15px;
 }
 
@@ -305,7 +309,7 @@ p {
     color: #fff;
 }
 
-.footer h3{
+.footer h4{
     color: #FEC63E;
 }
 
@@ -315,7 +319,7 @@ p {
 }
 
 /* Separador */
-.footer h3::after{
+.footer h4::after{
     content: '';
     display: block;
     width: 60px;
@@ -325,7 +329,7 @@ p {
 }
 
 /* Separador */
-.footer h3::after{
+.footer h4::after{
     content: '';
     display: block;
     width: 60px;
@@ -348,13 +352,6 @@ p {
     align-self: flex-start;
 }
 
-
-
-
-
-
-
-
 .copyright {
     padding: 20px 10px;
     background: #FEC63E;
@@ -362,4 +359,40 @@ p {
 
 .copyright p{
     flex: 1;
+}
+
+/***************************************** PÁGINA SOBRE **************************************/
+
+.sobre-intro {
+    background: url(../fotos/esporte-2.jpg) 0% 85%/cover no-repeat;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.sobre-intro h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 9px auto 14px auto;
+}
+
+.sobre-info {
+    padding: 60px 0;
+}
+
+.sobre-info ul {
+    align-content: center;
+}
+
+.sobre-info ul li{
+    flex: 1;
+    max-width: 520px;
+    margin: 20px;
+}
+
+.sobre-info img {
+    margin-top: 20px;
 }
