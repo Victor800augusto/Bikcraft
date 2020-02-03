@@ -6,7 +6,7 @@
 }
 body{
     font-family: Georgia, serif;
-    color: #252525;
+    color: black;
     background: #fff;
 }
 
@@ -53,6 +53,12 @@ button {
     color: #FEC63E;
 }
 
+p {
+    font-size: 0.875em;
+    font-weight: 1.4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+}
+
 /* Header */
 
 .menu {
@@ -76,7 +82,7 @@ button {
 }
 
 .menu-nav ul li a {
-	color: #252525;
+	color: black;
     font-size: 0.875em;
     padding: 20px;
 }
@@ -96,26 +102,253 @@ button {
     margin: 0 auto;
 }
 
- /* Separador */
- .inicial-quote::before {
+/* Separador */
+.inicial-quote::before {
+   content: '';
+   display: block;
+   width: 60px;
+   height: 3px;
+   background: #fff;
+   margin: 14px auto 12px auto;
+}
+
+/* Separador */
+.inicial-quote::after {
+   content: '';
+   display: block;
+   width: 60px;
+   height: 3px;
+   background: #fff;
+   margin: 14px auto;
+}
+
+.inicial-intro button {
+   margin: 14px auto;
+}
+
+/* Produtos */
+
+.inicial-produtos {
+   padding: 60px 0;
+   text-align: center;
+}
+
+/* Separador */
+.inicial-produtos h2::after {
+   content: '';
+   display: block;
+   width: 60px;
+   height: 3px;
+   background: black;
+   margin: 12px auto;
+}
+
+.inicial-produtos ul li {
+  align-self: center;
+   width: 300px;
+   margin: 40px 10px;
+}
+
+.produtos-icone {
+   background: black;
+   height: 200px;
+   display: flex;
+   align-items: center;
+}
+ 
+.produtos-icone img{
+   margin: 0 auto;
+}
+
+.produtos-info {
+   background: #FEC63E;
+   height: 120px;
+   padding: 15px 20px;
+}
+
+/* Separador */
+.produtos-info h3::after{
+   content: '';
+   display: block;
+   width: 60px;
+   height: 3px;
+   background: black;
+   margin: 5px auto 10px auto;
+}
+
+.produtos-info p {
+   max-width: 260px;
+   max-height: 34px;
+   overflow: hidden;
+}
+
+.inicial-produtos p {
+   margin-bottom: 15px;
+}
+
+/* Portifolio */
+
+.inicial-portifolio {
+   padding: 60px 0;
+   text-align: center;
+   background: black;
+   color: #FEC63E;
+}
+
+.inicial-portifolio li {
+    max-height: 280px;
+    overflow: hidden;
+}
+
+.portifolio-img-3 {
+
+}
+
+.inicial-portifolio h2::after{
+   content: '';
+   display: block;
+   width: 60px;
+   height: 3px;
+   background: #FEC63E;
+   margin: 5px auto 10px auto;
+}
+
+.inicial-portifolio p {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.inicial-portifolio li {
+   margin: 10px;
+}
+
+/* Qualidade */
+
+.inicial-qualidade {
+   padding: 60px 0;
+   text-align: center;
+}
+
+.qualidade-imagem img {
+   margin: 30px auto;
+}
+
+.inicial-qualidade ul li {
+   flex: 1;
+   max-width: 240px;
+   margin: 20px auto;
+}
+
+.inicial-qualidade > p {
+   margin-bottom: 15px;
+}
+
+/* Quote */
+
+.quote {
+    padding: 40px 0;
+    background: url(../fotos/esporte-3.jpg) 0% 52%/cover no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.quote-texto {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* Separador */
+.quote-texto::before {
     content: '';
     display: block;
     width: 60px;
     height: 3px;
     background: #fff;
-    margin: 14px auto 12px auto;
- }
+    margin: 12px auto;
+}
 
- /* Separador */
- .inicial-quote::after {
+/* Separador */
+.quote-texto::after {
+   content: '';
+   display: block;
+   width: 60px;
+   height: 3px;
+   background: #fff;
+   margin: 12px auto;
+}
+
+.quote:last-child p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200px;
+}
+
+/* Footer */
+
+.footer {
+    background: black;
+}
+
+.footer-info{
+    padding: 20px 10px;
+    color: #fff;
+}
+
+.footer h3{
+    color: #FEC63E;
+}
+
+.footer p {
+    font-size: 0.875em;
+    font-weight: 1.4em;
+}
+
+/* Separador */
+.footer h3::after{
     content: '';
     display: block;
     width: 60px;
     height: 3px;
-    background: #fff;
-    margin: 14px auto 14px auto;
- }
+    background: #FEC63E;
+    margin: 5px auto 10px auto;
+}
 
- .inicial-intro button {
-    margin: 14px auto;
- }
+/* Separador */
+.footer h3::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FEC63E;
+    margin: 8px 0 15px 0;
+}
+
+.footer ul li {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer ul li a{
+   display: inline-block;
+}
+
+.footer-historia {
+    max-width: 400px;
+    align-self: flex-start;
+}
+
+
+
+
+
+
+
+
+.copyright {
+    padding: 20px 10px;
+    background: #FEC63E;
+}
+
+.copyright p{
+    flex: 1;
+}

@@ -31,63 +31,70 @@
         <p>WILLIAM MORRIS</p>
         <button type="button" value="orcamento">ORÇAMENTO</button> 
     </main>
-    <section>
+    <section class="inicial-produtos">
         <h2>Produtos</h2>
-            <ul>
-                <li>
-                    <div>
-                        <img src="icones/passeio.svg" alt="Ícone da bicicleta de passeio">
-                    </div>
-                    <div>
-                        <h3>PASSEIO</h3>
-                        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
-                        O Lorem Ipsum tem vindo a ser o texto padrão usado </p>
-                    </div>
+            <ul class="flex">
+                <div class="flex-row">
+                    <li class="flex-item-4">
+                        <div class="produtos-icone">
+                            <img src="icones/passeio.svg" alt="Ícone da bicicleta de passeio">
+                        </div>
+                        <div class="produtos-info">
+                            <h3>PASSEIO</h3>
+                            <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
+                            O Lorem Ipsum tem vindo a ser o texto padrão usado </p>
+                        </div>
+                    </li>
+                    <li class="flex-item-4">
+                        <div class="produtos-icone">
+                            <img src="icones/esporte.svg" alt="Ícone da bicicleta de esporte">
+                        </div>
+                        <div class="produtos-info">
+                            <h3>ESPORTE</h3>
+                            <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
+                            O Lorem Ipsum tem vindo a ser o texto padrão usado </p>
+                        </div>
+                    </li>
+                    <li class="flex-item-4">
+                        <div class="produtos-icone">
+                            <img src="icones/retro.svg" alt="Ícone da bicicleta retrô">
+                        </div>
+                        <div class="produtos-info">
+                            <h3>RETRÔ</h3>
+                            <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
+                            O Lorem Ipsum tem vindo a ser o texto padrão usado </p>
+                        </div>
+                    </li>   
+                </div>         
+            </ul>
+
+            <p>clique aqui e veja os detalhes dos produtos</p>
+            <button type="button" value="produtos">PRODUTOS</button>
+    </section>
+    <section class="inicial-portifolio">
+        <h2>PORTIFÓLIO</h2>
+        <div class="flex">
+            <ul class="flex-row">
+                <li class="portifolio-item flex-item-6">
+                    <img src="fotos/retro-2.jpg" alt=""  class="portifolio-img-1">
                 </li>
-                <li>
-                    <div>
-                        <img src="icones/esporte.svg" alt="Ícone da bicicleta de esporte">
-                    </div>
-                    <div>
-                        <h3>ESPORTE</h3>
-                        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
-                        O Lorem Ipsum tem vindo a ser o texto padrão usado </p>
-                    </div>
+                <li class="portifolio-item flex-item-6">
+                    <img src="fotos/passeio-4.jpg" alt="" class="portifolio-img-2">
                 </li>
-                <li>
-                    <div>
-                        <img src="icones/retro.svg" alt="Ícone da bicicleta retrô">
-                    </div>
-                    <div>
-                        <h3>RETRÔ</h3>
-                        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
-                        O Lorem Ipsum tem vindo a ser o texto padrão usado </p>
-                    </div>
+                <li class="portifolio-item flex-item-12">
+                    <img src="fotos/passeio-2.jpg" alt="" class="portifolio-img-3">
                 </li>
             </ul>
-            <p>clique aqui e veja os detalhes dos produtos</p>
-            <button type="button" value="produtos"></button>
-    </section>
-    <section>
-        <h2>PORTIFÓLIO</h2>
-        <div>
-            <img src="fotos/retro-2.jpg" alt="">
-        </div>
-        <div>
-            <img src="fotos/passeio-4.jpg" alt="">
-        </div>
-        <div>
-            <img src="fotos/passeio-2.jpg" alt="">
         </div>
         <p>conheça mais o nosso portfólio</p>
-        <button type="button" value="portifolio">PORTIFÓLIO</button>
+            <button type="button" value="portifolio">PORTIFÓLIO</button>
     </section>
-    <section>
+    <section class="inicial-qualidade">
         <h2>QUALIDADE</h2>
-        <div>
+        <div class="qualidade-imagem">
             <img src="bikcraft-qualidade.svg" alt="">
         </div>
-        <ul>
+        <ul class="flex">
             <li>
                 <h3>DURABILIDADE</h3>
                 <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
@@ -107,44 +114,44 @@
         <p>conheça mais a história da bikcraft</p>
         <button type="button" value="sobre">SOBRE</button>
     </section>
-    <section>
-        <div>
-            <q>o verdadeiro segredo da felicidade está em ter um genuíno
-                interesse por todos os detalhes da vida cotidiana</q>
-            <p>WILLIAM MORRIS</p>
-        </div>     
+    <section class="quote">
+        <p class="quote-texto">"o verdadeiro segredo da felicidade está em ter um genuíno
+        interesse por todos os detalhes da vida cotidiana"</p>
+        <p>WILLIAM MORRIS</p>   
     </section>
-    <footer>
-       <div>
-           <ul>
-               <li>
+    <footer class="footer">
+       <div class="footer-info">
+           <ul class="flex">
+               <li class="footer-historia">
                    <h3>NOSSA HISTÓRIA</h3>
                    <p>O verdadeiro segredo da felicidade está em ter um genuíno
                     interesse por todos os detalhes da vida cotidiana. Interesse
                     por todos os detalhes da vida cotidiana.</p>
                </li>
-               <li>
-                <h3>CONTATO</h3>
-                <p>- 21 9999-9999<br>
-                - contato@bikcraft.com<br>
-                - Botafogo - RJ</p>
-            </li>
-            <li>
-                <h3>REDES SOCIAIS</h3>
-                <a href="https://www.facebook.com/" alt="link para nosso Facebook">
-                    <img src="sociais/facebook.svg" alt="Logo do Facebook">
-                </a>
-                <a href="https://www.instagram.com/" alt="link para nosso instagram">
-                    <img src="sociais/instagram.svg" alt="Logo do Instagram">
-                </a>
-                <a href="https://twitter.com/" alt="link para nosso Twitter">
-                    <img src="sociais/twitter.svg" alt="Logo do Twitter">
-                </a>
-            </li>
+               <li class="footer-contato">
+                    <h3>CONTATO</h3>
+                    <p>- 21 9999-9999<br>
+                    - contato@bikcraft.com<br>
+                    - Botafogo - RJ</p>
+                </li>
+                <li class="footer-social">
+                    <h3>REDES SOCIAIS</h3>
+                    <a href="https://www.facebook.com/" alt="link para nosso Facebook">
+                        <img src="sociais/facebook.svg" alt="Logo do Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" alt="link para nosso instagram">
+                        <img src="sociais/instagram.svg" alt="Logo do Instagram">
+                    </a>
+                    <a href="https://twitter.com/" alt="link para nosso Twitter">
+                        <img src="sociais/twitter.svg" alt="Logo do Twitter">
+                    </a>
+                </li>
            </ul>
        </div>
-       <div>
-           <p>Bikcraft 2019 - Alguns direitos reservados.</p>
+       <div class="copyright">
+           <div class="flex">
+                <p>Bikcraft 2019 - Alguns direitos reservados.</p>
+           </div>
        </div>
     </footer>
 </body>

@@ -4,3 +4,33 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.flex-row {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-4, .flex-item-6, .flex-item-8, .flex-item-12  {
+    margin-left: 10px;
+    margin-right: 10px;
+    align-self: flex-start;
+}
+
+.flex-item-4 {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+.flex-item-6 {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}
+.flex-item-8 {
+    flex: 0 0 calc(66.666% - 20px);
+    max-width: calc(66.666% - 20px);
+}
+.flex-item-12 {
+    flex: 0 0 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+}
