@@ -204,6 +204,7 @@ p {
 
 }
 
+/* Separador */
 .inicial-portifolio h2::after{
    content: '';
    display: block;
@@ -227,6 +228,16 @@ p {
 .inicial-qualidade {
    padding: 60px 0;
    text-align: center;
+}
+
+/* Separador */
+.inicial-qualidade h2::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 10px auto 10px auto;
 }
 
 .qualidade-imagem img {
