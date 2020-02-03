@@ -149,30 +149,30 @@ p {
 }
 
 .inicial-produtos ul li {
-  align-self: center;
-   width: 300px;
-   margin: 40px 10px;
+    align-self: center; 
+    width: 300px;
+    margin: 40px 10px;
 }
 
-.produtos-icone {
+.inicial-produtos-icone {
    background: black;
    height: 200px;
    display: flex;
    align-items: center;
 }
  
-.produtos-icone img{
+.inicial-produtos-icone img{
    margin: 0 auto;
 }
 
-.produtos-info {
+.inicial-produtos-info {
    background: #FEC63E;
    height: 120px;
    padding: 15px 20px;
 }
 
 /* Separador */
-.produtos-info h4::after{
+.inicial-produtos-info h4::after{
    content: '';
    display: block;
    width: 60px;
@@ -181,7 +181,7 @@ p {
    margin: 5px auto 10px auto;
 }
 
-.produtos-info p {
+.inicial-produtos-info p {
    max-width: 260px;
    max-height: 34px;
    overflow: hidden;
@@ -377,6 +377,7 @@ p {
     color: #fff;
 }
 
+/* Separador */
 .sobre-intro h2::after {
     content: '';
     display: block;
@@ -416,4 +417,116 @@ p {
     margin-top: 40px;
     max-height: 320px;
     overflow: hidden;
+}
+
+
+/***************************************** PÁGINA PRODUTOS **************************************/
+
+/* Intro */
+
+.produtos-intro {
+    background: url(../fotos/esporte-1.jpg) 0% 63%/cover no-repeat;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Separador */
+.produtos-intro h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 9px auto 14px auto;
+}
+
+/* Bicicletas */
+
+.bicicletas {
+    padding: 60px 0;
+}
+
+.bicicletas ul li ul li {
+    margin: 10px 5px;
+}
+
+.bicicletas-titulo {
+    flex: 1;
+    max-width: 640px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.titulo-1 {
+    background: url(../fotos/passeio-1.jpg) 0% 63%/cover no-repeat;
+}
+
+.titulo-2 {
+    background: url(../fotos/esporte-4.jpg) 0% 63%/cover no-repeat;
+}
+
+.titulo-3 {
+    background: url(../fotos/retro-2.jpg) 0% 63%/cover no-repeat;
+}
+
+.bicicletas-titulo h2::after, .bicicletas-titulo h2::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 10px auto;
+}
+
+.bicicletas-icone {
+    flex: 1;
+    background: black;
+    max-width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+}
+
+.bicicletas-icone img{
+    margin: 0 auto;
+}
+
+.bicicletas-imagem-1 {
+    max-width: 460px;
+    height: 280px;
+}
+
+.bicicletas-info {
+    background: black;
+    color: #fff;
+}
+
+.bicicletas-paragrafo {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bicicletas-paragrafo p{
+    height: 110px;
+    max-width: 400px;
+    text-align: left;
+    font-size: 1.125em;
+}
+
+.bicicletas-info ul{
+    color: black;
+    background: #FEC63E;
+    text-align: center;
+    font-weight: bold;
+    height: 100px;
+}
+
+.bicicletas-info ul li {
+
 }

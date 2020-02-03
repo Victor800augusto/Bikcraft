@@ -12,25 +12,74 @@
     flex-wrap: wrap;
 }
 
-.flex-item-4, .flex-item-6, .flex-item-8, .flex-item-12  {
+.flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4, .flex-item-5, .flex-item-6, .flex-itemd-7,
+.flex-item-8,.flex-item-9, .flex-item-10, .flex-item-11, .flex-item-12, .flex-item-13, .flex-item-14,
+.flex-item-15, .flex-item-16 {
     margin-left: 10px;
     margin-right: 10px;
     align-self: flex-start;
 }
-
+.flex-item-1 {
+    flex: 0 0 calc(6.25% - 20px);
+    width: calc(6.25% - 20px);
+}
+.flex-item-2 {
+    flex: 0 0 calc(12.5% - 20px);
+    width: calc(12.5% - 20px);
+}
+.flex-item-3 {
+    flex: 0 0 calc(18.75% - 20px);
+    width: calc(18.75% - 20px);
+}
 .flex-item-4 {
-    flex: 0 0 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
+    flex: 0 0 calc(25% - 20px);
+    width: calc(25% - 20px);
+}
+.flex-item-5 {
+    flex: 0 0 calc(31.25% - 20px);
+    width: calc(31.25% - 20px);
 }
 .flex-item-6 {
-    flex: 0 0 calc(50% - 20px);
-    max-width: calc(50% - 20px);
+    flex: 0 0 calc(37.5% - 20px);
+    width: calc(37.5% - 20px);
+}
+.flex-item-7 {
+    flex: 0 0 calc(43.75% - 20px);
+    width: calc(43.75% - 20px);
 }
 .flex-item-8 {
-    flex: 0 0 calc(66.666% - 20px);
-    max-width: calc(66.666% - 20px);
+    flex: 0 0 calc(50% - 20px);
+    width: calc(50% - 20px);
+}
+.flex-item-9 {
+    flex: 0 0 calc(56.25%  - 20px);
+    width: calc(56.25%  - 20px);
+}
+.flex-item-10 {
+    flex: 0 0 calc(62.5% - 20px);
+    width: calc(62.5% - 20px);
+}
+.flex-item-11 {
+    flex: 0 0 calc(68.75% - 20px);
+    width: calc(68.75% - 20px);
 }
 .flex-item-12 {
+    flex: 0 0 calc(75% - 20px);
+    width: calc(75% - 20px);
+}
+.flex-item-13 {
+    flex: 0 0 calc(81.25% - 20px);
+    width: calc(81.25% - 20px);
+}
+.flex-item-14 {
+    flex: 0 0 calc(87.5% - 20px);
+    width: calc(87.5% - 20px);
+}
+.flex-item-15 {
+    flex: 0 0 calc(93.75% - 20px);
+    width: calc(93.75% - 20px);
+}
+.flex-item-16 {
     flex: 0 0 calc(100% - 20px);
-    max-width: calc(100% - 20px);
+    width: calc(100% - 20px);
 }
