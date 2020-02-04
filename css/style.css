@@ -473,6 +473,7 @@ p {
     background: url(../fotos/retro-2.jpg) 0% 63%/cover no-repeat;
 }
 
+/* Separador */
 .bicicletas-titulo h2::after, .bicicletas-titulo h2::before {
     content: '';
     display: block;
@@ -529,4 +530,62 @@ p {
 
 .bicicletas-info ul li {
 
+}
+
+/* Orçamento */
+
+.orcamento {
+    background: black;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Separador */
+.orcamento h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FEC63E;
+    margin: 10px auto 15px auto;
+}
+
+.orcamento h3, h4 {
+    color: #FEC63E;
+}
+
+.orcamento ul li {
+    text-align: left;
+}
+
+.formulario {
+    width: 410px;
+    height: 450px;
+}
+
+textarea    {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-color: #FEC63E;
+    border-width: 4px;
+    resize: none;
+    width: 400px;
+    height: 120px;
+    margin: 10px 0;
+}
+input   {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-style: solid;
+    border-color: #FEC63E;
+    border-width: 4px;
+    width: 400px;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.monte-background {
+    background: #292929;
 }
