@@ -71,28 +71,40 @@ p {
 
 .menu {
     background: #FEC63E;
-    padding: 9px 0;
+    padding: 9px;
+    display: flex;
 }
 
 .menu-logo {
-	margin: 0 10px;
-}
-
-.menu-nav {
-    flex: 1;
-    margin: 0 10px;
-    align-self: center;
+	flex-grow: 1;	
 }
 
 .menu-nav ul {
-	float: right;
     display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
 }
 
 .menu-nav ul li a {
 	color: black;
     font-size: 0.875em;
-    padding: 20px;
+    padding: 0 20px;
+}
+
+/* Header responsividade mobile */
+@media (max-width: 739px) {
+	.menu {
+		flex-direction: column;
+	}
+	.menu-nav {
+		margin-top: 10px;
+    }
+    .menu-nav ul {
+        padding: 0;
+    }
+    .menu-nav ul li a:first-child{
+        padding-left: 0;
+    }
 }
 
 /* Página inicial intro */
