@@ -359,6 +359,7 @@ p {
 .footer-social a{
     border: 3px solid #FEC63E;
     padding: 5px;
+    margin-right: 10px;
 }
 
 .copyright {
@@ -555,11 +556,11 @@ p {
     margin: 10px auto 15px auto;
 }
 
-.orcamento h3, h5 {
+.orcamento h3, h4 {
     color: #FEC63E;
 }
 
-.orcamento h5 {
+.orcamento h4 {
     margin: 10px 0;
 }
 
@@ -687,3 +688,46 @@ input   {
 	border-radius: 50%;
 }
  
+
+/***************************************** PÁGINA CONTATO **************************************/
+
+/* Intro */
+
+.contato-intro {
+    background: url(../fotos/retro-1.jpg) 0% 75%/cover no-repeat;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Orçamento */
+
+.contato-orcamento {
+    padding: 60px 0;
+}
+
+.contato-orcamento h3, h4 {
+    color: #FEC63E;
+}
+
+.contato-orcamento h4 {
+    margin: 10px 0;
+}
+
+.contato-orcamento ul {
+    margin: 0 auto;
+}
+
+.contato-orcamento ul li {
+    text-align: left;
+    width: 420px;
+    margin: 0 10px;
+}
+
+.contato-orcamento a {
+    border: 3px solid #FEC63E;
+    padding: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
