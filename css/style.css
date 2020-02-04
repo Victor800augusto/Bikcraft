@@ -146,6 +146,13 @@ p {
    margin: 14px auto;
 }
 
+/* Intro responsividade mobile */
+@media (max-width: 739px) {
+	.inicial-intro {
+		padding: 60px 0 30px 0;
+	}
+}
+
 /* Produtos */
 
 .inicial-produtos {
