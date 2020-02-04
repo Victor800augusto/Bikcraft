@@ -49,6 +49,9 @@ h3 {
 h4 {
     font-size: 1.125em;
 }
+h5 {
+    font-size: 0.875em;
+}
 
 button {
     padding: 10px 20px;
@@ -552,17 +555,28 @@ p {
     margin: 10px auto 15px auto;
 }
 
-.orcamento h3, h4 {
+.orcamento h3, h5 {
     color: #FEC63E;
+}
+
+.orcamento h5 {
+    margin: 10px 0;
+}
+
+.orcamento ul {
+    margin: 0 auto;
 }
 
 .orcamento ul li {
     text-align: left;
+    width: 420px;
+    margin: 0 10px;
 }
 
 .formulario {
     width: 410px;
     height: 450px;
+    float: left;
 }
 
 textarea    {
@@ -589,3 +603,87 @@ input   {
 .monte-background {
     background: #292929;
 }
+
+/***************************************** PÁGINA PORTIFÓLIO **************************************/
+
+/* Intro */
+
+.portifolio-intro {
+    background: url(../fotos/retro-3.jpg) 0% 75%/cover no-repeat;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Portifólio Quote */
+
+.portifolio-quote{
+    padding: 40px 0;
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.portifolio-quote p:last-child{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+/* Portifólio */
+
+.inicial-portifolio {
+    padding: 60px 0;
+    text-align: center;
+    background: black;
+    color: #FEC63E;
+}
+ 
+.inicial-portifolio li {
+     max-height: 280px;
+     overflow: hidden;
+}
+
+.portifolio-ponto-1 {
+    margin: 20px auto;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.portifolio-ponto-1::after {
+    content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: #FEC63E;
+	border-radius: 50%;
+}
+.portifolio-ponto-2 {
+    margin: 20px auto;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.portifolio-ponto-2::after {
+    content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: #212121;
+	border-radius: 50%;
+}
+.portifolio-ponto-3 {
+    margin: 20px auto;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.portifolio-ponto-3::after {
+    content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: #212121;
+	border-radius: 50%;
+}
+ 
