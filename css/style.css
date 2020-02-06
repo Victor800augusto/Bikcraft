@@ -92,11 +92,21 @@ p {
     padding: 0 20px;
 }
 
+/* Header responsividade tablet */
+@media (min-width: 740px) and (max-width: 980px) {
+	.menu-nav li:first-child a{
+        padding-left: 0px;
+    } 
+}
+
 /* Header responsividade mobile */
 @media (max-width: 739px) {
 	.menu {
 		flex-direction: column;
-	}
+    }
+    .menu-logo {
+        margin-bottom: 10px;
+    }
 	.menu-nav {
         margin-top: 0;
         align-self: center;
@@ -107,6 +117,7 @@ p {
     .menu-nav ul li a:first-child{
         padding-left: 0;
     }
+    
 }
 
 /* Página inicial intro */
@@ -256,20 +267,30 @@ p {
    margin: 10px;
 }
 
-/* Contato responsividade tablet */
+/* Portifólio responsividade tablet */
 @media (min-width: 740px) and (max-width: 980px){
-    .inicial-portifolio {
-        
+    .inicial-portifolio ul li{
+        width: 700px;
+        margin: 10px 0;
     }
     .inicial-portifolio div ul {
         flex-direction: column;
+        width: 700px;
+        margin: 0 auto;
     }
 }
 
-/* Contato responsividade mobile */
+/* Portifólio responsividade mobile */
 @media (max-width:739px){
+    .inicial-portifolio ul li{
+        width: 300px;
+        margin: 10px 0;
+        max-height: 130px;
+    }
     .inicial-portifolio div ul {
         flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
     }
 }
 
@@ -607,10 +628,11 @@ p {
     text-align: center;
     font-weight: bold;
     height: 100px;
+    
 }
 
 .bicicletas-info ul li {
-    border: 3px solid black;
+    border-top: 1px solid black;
 }
 
 /* Orçamento */
@@ -683,8 +705,18 @@ input   {
     .orcamento {
         padding: 40px 10px;
     }
+    .orcamento ul{
+        justify-content: center;
+    } 
     .orcamento ul li{
-        margin: 0 auto;
+        width: 300px;
+        margin: 10px;
+    }
+    input {
+        max-width: 280px;
+    }
+    textarea {
+        max-width: 280px;
     }
 }
 
@@ -693,8 +725,18 @@ input   {
     .orcamento {
         padding: 20px;
     }
-    .orcamento ul li{
+    .orcamento ul{
         margin: 0 auto;
+    } 
+    .orcamento ul li{
+        width: 300px;
+        margin: 0;
+    }
+    input {
+        max-width: 280px;
+    }
+    textarea {
+        max-width: 280px;
     }
 }
 
@@ -831,8 +873,18 @@ input   {
     .contato-orcamento {
         padding: 40px 10px;
     }
-    .contato-orcamento ul li {
-        margin: 20px auto;
+    .contato-orcamento ul{
+        justify-content: center;
+    } 
+    .contato-orcamento ul li{
+        width: 300px;
+        margin: 10px;
+    }
+    input {
+        max-width: 280px;
+    }
+    textarea {
+        max-width: 280px;
     }
 }
 
@@ -841,7 +893,17 @@ input   {
     .contato-orcamento {
         padding: 20px;
     }
-    .contato-orcamento ul li{
+    .contato-orcamento ul{
         margin: 0 auto;
+    } 
+    .contato-orcamento ul li{
+        width: 300px;
+        margin: 0;
+    }
+    input {
+        max-width: 280px;
+    }
+    textarea {
+        max-width: 280px;
     }
 }

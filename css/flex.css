@@ -83,3 +83,19 @@
     flex: 0 0 calc(100% - 20px);
     width: calc(100% - 20px);
 }
+
+/* Flex responsividade tablet */
+@media (min-width: 740px) and (max-width: 980px){
+    .flex {
+        max-width: 700px;
+        flex-direction: column;
+    }
+}
+
+/* Flex Responsividade mobile */
+@media (max-width: 739px) {
+    .flex {
+        max-width: 300px;
+        flex-direction: column;
+    }
+}
