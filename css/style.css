@@ -550,7 +550,7 @@ p {
     padding: 60px 0;
 }
 
-.bicicletas ul li ul li {
+.seccao-item > li {
     margin: 10px 5px;
 }
 
@@ -599,10 +599,6 @@ p {
     margin: 0 auto;
 }
 
-.bicicletas-imagem-1 {
-    
-}
-
 .bicicletas-info {
     background: black;
     color: #fff;
@@ -632,7 +628,41 @@ p {
 }
 
 .bicicletas-info ul li {
-    border-top: 1px solid black;
+    border: 1px solid black;
+    display: block;
+    width: 140px;
+}
+
+.seccao-item > li {
+    height: 280px;
+    overflow: hidden;
+}
+
+/* Bicicletas responsividade tablet */
+@media (min-width: 740px) and (max-width: 980px){
+    .bicicletas-paragrafo {
+        padding: 5px;
+    }
+    .bicicletas-imagem-1 {
+        display: fit;
+    }
+}
+
+/* Bicicletas responsividade mobile */
+@media (max-width:739px){
+    .seccao-item > li {
+        width: 280px;
+        margin: 10px 0;
+        justify-self: center;
+    }
+    .seccao-item  {
+        flex-direction: column;
+        width: 280px;
+        margin: 0 auto;
+    }
+    .bicicletas-paragrafo {
+        padding: 2px;
+    }
 }
 
 /* Orçamento */
