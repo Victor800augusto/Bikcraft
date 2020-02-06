@@ -72,11 +72,12 @@ p {
 .menu {
     background: #FEC63E;
     padding: 9px;
-    display: flex;
+    
 }
 
 .menu-logo {
-	flex-grow: 1;	
+    flex-grow: 1;
+    justify-content: flex-start;
 }
 
 .menu-nav ul {
@@ -97,7 +98,8 @@ p {
 		flex-direction: column;
 	}
 	.menu-nav {
-		margin-top: 10px;
+        margin-top: 0;
+        align-self: center;
     }
     .menu-nav ul {
         padding: 0;
@@ -170,15 +172,19 @@ p {
    margin: 12px auto;
 }
 
+.inicial-produtos ul {
+    justify-content: center;
+}
+
 .inicial-produtos ul li {
-    align-self: center; 
     width: 300px;
-    margin: 40px 10px;
+    margin: 20px 10px;
 }
 
 .inicial-produtos-icone {
    background: black;
    height: 200px;
+   width: 280px;
    display: flex;
    align-items: center;
 }
@@ -191,6 +197,10 @@ p {
    background: #FEC63E;
    height: 120px;
    padding: 15px 20px;
+}
+
+.inicial-produtos-info h4 {
+    color: black;
 }
 
 /* Separador */
@@ -227,10 +237,6 @@ p {
     overflow: hidden;
 }
 
-.portifolio-img-3 {
-
-}
-
 /* Separador */
 .inicial-portifolio h3::after{
    content: '';
@@ -248,6 +254,23 @@ p {
 
 .inicial-portifolio li {
    margin: 10px;
+}
+
+/* Contato responsividade tablet */
+@media (min-width: 740px) and (max-width: 980px){
+    .inicial-portifolio {
+        
+    }
+    .inicial-portifolio div ul {
+        flex-direction: column;
+    }
+}
+
+/* Contato responsividade mobile */
+@media (max-width:739px){
+    .inicial-portifolio div ul {
+        flex-direction: column;
+    }
 }
 
 /* Qualidade */
@@ -393,6 +416,18 @@ p {
 
 .copyright p{
     flex: 1;
+}
+
+/* Footer responsividade mobile */
+@media (max-width: 739px) {
+	.footer-info ul {
+        flex-direction: column;
+    }
+    .footer-info ul li{
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    
 }
 
 /***************************************** PÁGINA SOBRE **************************************/
@@ -544,8 +579,7 @@ p {
 }
 
 .bicicletas-imagem-1 {
-    max-width: 460px;
-    height: 280px;
+    
 }
 
 .bicicletas-info {
@@ -576,7 +610,7 @@ p {
 }
 
 .bicicletas-info ul li {
-
+    border: 3px solid black;
 }
 
 /* Orçamento */
