@@ -72,12 +72,15 @@ p {
 .menu {
     background: #FEC63E;
     padding: 9px;
-    
 }
 
-.menu-logo {
-    flex-grow: 1;
+.menu div{
+    justify-content: space-between;
+}
+
+.menu-logo {    
     justify-content: flex-start;
+    display: block;
 }
 
 .menu-nav ul {
@@ -106,6 +109,7 @@ p {
     }
     .menu-logo {
         margin-bottom: 10px;
+        display: table;
     }
 	.menu-nav {
         margin-top: 0;
@@ -586,6 +590,10 @@ p {
     margin: 10px auto;
 }
 
+.seccao-item > li {
+    height: 280px;
+}
+
 .bicicletas-icone {
     flex: 1;
     background: black;
@@ -624,13 +632,6 @@ p {
     text-align: center;
     font-weight: bold;
     height: 100px;
-    
-}
-
-.bicicletas-info ul li {
-    border: 1px solid black;
-    display: block;
-    width: 140px;
 }
 
 .seccao-item > li {
@@ -638,13 +639,54 @@ p {
     overflow: hidden;
 }
 
+.bicicletas-item {
+    flex: 0 0 50%;
+    margin: 0;
+    align-self: auto;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.bicicletas-item span {
+    margin: 0 auto;
+}
+
+.item-1 {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.item-2 {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+.item-3 {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+.item-4 {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+@media (min-width: 980px) {
+    
+}
+
 /* Bicicletas responsividade tablet */
 @media (min-width: 740px) and (max-width: 980px){
     .bicicletas-paragrafo {
         padding: 5px;
     }
-    .bicicletas-imagem-1 {
-        display: fit;
+    .item-3 {
+        border: none;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+    }
+    .item-2 {
+        border: none;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
     }
 }
 
@@ -662,6 +704,19 @@ p {
     }
     .bicicletas-paragrafo {
         padding: 2px;
+    }
+    .titulo-1 {
+        background: url(../fotos/passeio-1.jpg) 70% 0%/cover no-repeat;
+    }
+    .item-3 {
+        border: none;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+    }
+    .item-2 {
+        border: none;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
     }
 }
 
@@ -929,6 +984,7 @@ input   {
     .contato-orcamento ul li{
         width: 300px;
         margin: 0;
+        flex: 0 0 100%;
     }
     input {
         max-width: 280px;
