@@ -92,14 +92,17 @@ p {
 .menu-nav ul li a {
 	color: black;
     font-size: 0.875em;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 /* Header responsividade tablet */
 @media (min-width: 740px) and (max-width: 980px) {
 	.menu-nav li:first-child a{
         padding-left: 0px;
-    } 
+    }
+    .menu > div{
+        flex-direction: row;
+    }
 }
 
 /* Header responsividade mobile */
@@ -108,6 +111,7 @@ p {
 		flex-direction: column;
     }
     .menu-logo {
+        margin-left: 10px;
         margin-bottom: 10px;
         display: table;
     }
@@ -118,10 +122,13 @@ p {
     .menu-nav ul {
         padding: 0;
     }
-    .menu-nav ul li a:first-child{
-        padding-left: 0;
-    }
     
+    .menu-nav ul li a {
+        padding: 5px 10px;
+    }
+    .menu > div{
+        flex-direction: row;
+    }
 }
 
 /* Página inicial intro */
@@ -610,6 +617,11 @@ p {
 .bicicletas-info {
     background: black;
     color: #fff;
+}
+
+.bicicletas-imagem {
+    height: 100%;
+    width: 100%;
 }
 
 .bicicletas-paragrafo {
